@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+form.container {
+    border: 2px solid rgba(0,0,0,0.5);
+    padding: 30px 70px;
+    box-shadow: 5px 5px 20px #000;
+
+}
+
+h2 {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+input[type='text'], input[type='email'], input[type='password'] {
+    border: 1px solid #2196f3;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+#btn {
+    background-color: #2196f3;
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn:focus{
+    outline: 0;
+}
+
+
+</style>
+
+<body>
+      
+  <form id="form" class="container" method="post" action="/register">
+    <h2>Register With Us</h2>
+    <div class="form-control">
+        <label for="name">name: </label>
+        <input type="text" id="name" placeholder="Enter username" name="name">
+    </div>
+
+    <div class="form-control">
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Enter email" name="email">
+    </div>
+
+    <div class="form-control">
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="Enter password" name="password">
+    </div>
+
+
+    <div class="form-control">
+        <button id="btn" type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>
